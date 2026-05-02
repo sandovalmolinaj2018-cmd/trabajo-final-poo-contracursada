@@ -6,25 +6,16 @@ import GameState.GameState;
 import GameState.MenuState;
 
 public class Game extends JPanel implements Runnable {
-
     private Thread thread;
     private boolean running;
-
     public SonidoControlador musica = new SonidoControlador();
     public SonidoControlador efectos = new SonidoControlador();
-    
     private GameState currentState;
     private GameState overlayState;
-    private Teclado input;
 
     public Game(Teclado input) {
-
-        this.input = input;
-
         setFocusable(true);
         addKeyListener(input);
-
-        setState(new MenuState(input, this)); //nos muestra la primer pantalla(menuPrincipal)
     }
 
     public void setOverlay(GameState overlay) {
@@ -82,5 +73,5 @@ public class Game extends JPanel implements Runnable {
         if (overlayState != null) {
             overlayState.draw(g2);
         }
-    } 
+    }
 }

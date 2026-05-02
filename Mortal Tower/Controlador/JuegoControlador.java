@@ -90,11 +90,9 @@ public class JuegoControlador {
             }
         } while (true);
      
-
         vista.mostrarMensaje("Elegiste: " + heroe.getNombre());
         vista.mostrarMensaje("Vida actual: " + heroe.getVidaActual());
         vista.mostrarMensaje("Mana actual: " + heroe.getManaActual());
-
         ejecutarSimulacion();
     }
 }
