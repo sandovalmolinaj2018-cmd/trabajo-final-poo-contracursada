@@ -5,14 +5,10 @@ import javax.swing.JButton;
 import Vista.VistaCombate;
 
 public class ControladorCombate {
-    
     private VistaCombate vistaCombate;
     private Teclado teclado;
-
-    //VALORES DE LA CLASSE TECLADO
     //private long ultimoInput = 0;
     //private final long cooldown = 120;
-
     private int indiceSeleccion = 0; 
     private boolean enMenuAtaques = false; 
     private boolean enBotonVolver = false; 

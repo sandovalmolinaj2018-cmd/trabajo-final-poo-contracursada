@@ -16,6 +16,7 @@ public class Game extends JPanel implements Runnable {
     public Game(Teclado input) {
         setFocusable(true);
         addKeyListener(input);
+        setState(new MenuState(input, this));
     }
 
     public void setOverlay(GameState overlay) {

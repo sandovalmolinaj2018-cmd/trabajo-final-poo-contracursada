@@ -11,17 +11,18 @@ public class VistaCombate extends JPanel {
     private CardLayout cardLayout;
     private JLabel lblCajaTexto;  
     private JButton btnVolver;
-    
-    // Botones del menú principal actualizados
+    // Botones del menú principal
     private JButton btnBasico;
     private JButton btnLuchar;
     private JButton btnHuir;
-    
     // Botones de habilidades
     private JButton btnAtk1;
     private JButton btnAtk2;
     private JButton btnAtk3;
     private JButton btnAtk4;
+
+    //TODO: Faltaria Agregar sprites a los personajes
+    //Hacer un fondo y guardarlo en assets.
 
     public VistaCombate() {
         this.setLayout(new BorderLayout());
@@ -243,7 +244,6 @@ public class VistaCombate extends JPanel {
         cardLayout.show(panelMenuInferior, "PRINCIPAL");
         btnVolver.setVisible(false);
     }
-
     public JButton getBtnVolver() { return btnVolver; }
     public JButton getBtnBasico() { return btnBasico; }
     public JButton getBtnLuchar() { return btnLuchar; }  
